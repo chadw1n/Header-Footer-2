@@ -38,9 +38,22 @@ html, body {
   object-fit: cover;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .company-name {
   font-size: 1.5rem;
   color: rgb(0, 0, 0);
+}
+
+.company-name span {
+  color: #ffcc00;
+}
+
+.company-name:hover {
+  color: #ffcc00;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -77,9 +90,8 @@ html, body {
   background-color: #e6b800;
 }
 
-/* ✅ Background image section */
 .hero-image {
-  background-image: url('../img/car rental bg.jpg'); /* Rename if needed */
+  background-image: url('../img/car rental bg.jpg'); 
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
