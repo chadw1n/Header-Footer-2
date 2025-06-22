@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  z-index: 2;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.nav-links a {
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  padding: 0.3rem 0.5rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.right {
+  z-index: 2;
+}
+
+.btn {
+  padding: 0.4rem 1rem;
+  background-color: #ffcc00;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b800;
+}
+
+/* ✅ Background image section */
+.hero-image {
+  background-image: url('../img/car rental bg.jpg'); /* Rename if needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/* ✅ Footer section */
+.footer {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 2rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #444;
+}
+
+.footer-column {
+  min-width: 180px;
+  margin-bottom: 1rem;
+}
+
+.footer-column h4 {
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-column a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+}
+
+.footer-column a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 24px;
+}
+
+.email-input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  border-radius: 5px;
+}
